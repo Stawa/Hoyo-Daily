@@ -26,12 +26,14 @@ This git repo makes no changes to the **`genshin.py`** packages. Instead, I make
 Clone the repository by using the following command using [**`git-scm`**](https://git-scm.com/downloads/guis):
 
 ```
-git clone https://github.com/Stawa/
+git clone https://github.com/Stawa/Hoyo-Daily
 ```
 
 After you clone the repository, you can use the following command to install requirement dependencies:
 
 ```
+cd Hoyo-Daily
+# then
 pip3 install requirements.txt
 ```
 
@@ -44,7 +46,7 @@ pip3 install requirements.txt
 And this one is the recommended way to install this repository, simply.
 
 ```
-pip3 install git+https://github.com/Stawa/
+pip3 install git+https://github.com/Stawa/Hoyo-Daily
 ```
 
 </details>
