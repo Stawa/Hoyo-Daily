@@ -1,0 +1,4 @@
+pytz
+genshin
+python-dotenv
+discord-webhook
