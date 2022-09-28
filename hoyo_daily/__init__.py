@@ -14,12 +14,12 @@ class HoyoDaily:
         self,
         auth_url: str = None,
         auth_key: Optional[str] = None,
-        webook_url: str = None,
+        webhook_url: str = None,
         cookies: dict = None,
     ):
         self.Daily = AutoCheckIn(
-            url=auth_url, authkey=auth_key, webhook_url=webook_url, cookies=cookies
+            url=auth_url, authkey=auth_key, webhook_url=webhook_url, cookies=cookies
         )
         self.Redeem = AutoRedeem(
-            url=auth_url, authkey=auth_key, webhook_url=webook_url, cookies=cookies
+            url=auth_url, authkey=auth_key, webhook_url=webhook_url, cookies=cookies
         )

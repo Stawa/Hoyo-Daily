@@ -1,5 +1,4 @@
 import genshin
-import asyncio
 import pytz
 from genshin import AlreadyClaimed, Game
 from discord_webhook import DiscordWebhook, DiscordEmbed
@@ -73,6 +72,10 @@ class AutoCheckIn:
             )
 
             x = []
+
+            print(
+                f"[ {self.timestamp} ] Daily Rewards (GenshinImpact) - {reward.amount}x {reward.name}"
+            )
 
             async for claimed in self.Client.claimed_rewards(game=Game.HONKAI):
                 x.append(claimed.time)
