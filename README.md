@@ -4,7 +4,7 @@
 
 ### <span class="emoji">📖</span> Description
 
-This git repo makes no changes to the **`genshin.py`** packages. Instead, I make it easier to use and automatically run the relevant daily functions. If the authors of **`genshin.py`** do not want this git repository to exist, please create an issue on this repository. Thank you!
+This git repo makes no changes to the [**`genshin.py`**](https://github.com/thesadru/genshin.py) packages. Instead, I make it easier to use and automatically run the relevant daily functions. If the authors of [**`genshin.py`**](https://github.com/thesadru/genshin.py) do not want this git repository to exist, please create an issue on this repository. Thank you!
 
 ### <span class="emoji">✨</span> Features
 
@@ -53,10 +53,8 @@ pip3 install git+https://github.com/Stawa/Hoyo-Daily
 
 ### <span class="emoji">❓</span> How to Use
 
-1. Find Authkey - [You can find it here]()
-   - Copy the Authkey (If you already found one) or URL and paste it to `.env` file.
-2. Create Discord Webhook (Optional)
-   - Put the Discord Webhook in the `.env` file.
-3. Find HoyoLab Cookies - [You can find it here]()
-   - Copy the `ltuid` and paste it to `.env` file `.env` file
-   - Copy the `ltoken` and paste it to `.env` file `.env` file
+There are 3 requirements to use this git repository,
+
+1. [AuthKey](https://github.com/Stawa/Hoyo-Daily/blob/main/TUTORIAL.md#locate-the-auth_key-from-genshin-impact) - Genshin Impact Client (Optional)
+2. [HoyoLab Cookies](https://github.com/Stawa/Hoyo-Daily/blob/main/TUTORIAL.md#locate-the-ltoken-and-ltuid-from-hoyolab)
+3. [Discord Webhook](https://github.com/Stawa/Hoyo-Daily/blob/main/TUTORIAL.md#create-a-discord-webhook-as-notification)
