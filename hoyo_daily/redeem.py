@@ -35,17 +35,20 @@ class AutoRedeem:
             authkey=self.authkey,
         )
 
-    async def auto_redeem(self) -> None:
+    async def auto_redeem(self) -> list:
         try:
             codes = requests.get(self.code_url).json().get("obtainable")["codes"]
             webhook = DiscordWebhook(url=self.webook_url)
             account = await self.Client.genshin_accounts()
 
-            for i in range(len(codes)):
-                await self.Client.redeem_code(
-                    code=codes[i], uid=await self.Client._get_uid(game=Game.GENSHIN)
-                )
-                await asyncio.sleep(5)
+            try:
+                for i in range(len(codes)):
+                    await self.Client.redeem_code(
+                        code=codes[i], uid=await self.Client._get_uid(game=Game.GENSHIN)
+                    )
+                    await asyncio.sleep(5)
+            except ValueError:
+                return
 
             embed = DiscordEmbed(
                 title="Genshin Impact Redeem Code",
@@ -62,5 +65,5 @@ class AutoRedeem:
             webhook.execute()
 
             return codes
-        except (genshin.RedemptionException, genshin.InvalidCookies) as e:
+        except (genshin.RedemptionException, genshin.RedemptionClaimed) as e:
             return e
