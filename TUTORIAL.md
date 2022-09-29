@@ -1,4 +1,8 @@
-### Locate the `ltoken` and `ltuid` from HoyoLab. 
+### Locate the `auth_key` from Genshin Impact
+
+Coming Soon.
+
+### Locate the `ltoken` and `ltuid` from HoyoLab.
 
 **Note: The Cookie script was created by [TakaGG](https://www.youtube.com/c/takagg/) and is not mine.**
 
