@@ -31,7 +31,7 @@ git clone https://github.com/Stawa/Hoyo-Daily
 
 After you clone the repository, you can use the following command to install requirement dependencies:
 
-```
+```sh
 cd Hoyo-Daily
 # then
 pip3 install requirements.txt
