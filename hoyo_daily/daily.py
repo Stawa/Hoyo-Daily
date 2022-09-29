@@ -47,7 +47,7 @@ class AutoCheckIn:
             async for claimed in self.Client.claimed_rewards(game=Game.GENSHIN):
                 embed = DiscordEmbed(
                     title="Genshin Impact Daily Sign-in",
-                    description=f"━━━━━━━━━━━━━━━━━━━━━━━━━\nUsername: {account[0].nickname} [{account[0].server_name}] ({await self.Client._get_uid(game='genshin')})\nItem Rewards: {reward.name} x{reward.amount}\nToday's Checkin Time: {claimed.time.strftime('%d %B, %Y')}\nTotal Checkin: {len(x)} Days\nStatus: OK\n━━━━━━━━━━━━━━━━━━━━━━━━━",
+                    description=f"━━━━━━━━━━━━━━━━━━━━━━━━━\nUsername: {account[0].nickname} [{account[0].server_name}] ({await self.Client._get_uid(game='genshin')})\nItem Rewards: {reward.name} x{reward.amount}\nToday's Checkin Date: {claimed.time.strftime('%d %B, %Y')}\nTotal Checkin: {len(x)} Days\nStatus: OK\n━━━━━━━━━━━━━━━━━━━━━━━━━",
                     color="0038a8",
                 )
                 embed.set_timestamp()
@@ -74,7 +74,7 @@ class AutoCheckIn:
             x = []
 
             print(
-                f"[ {self.timestamp} ] Daily Rewards (GenshinImpact) - {reward.amount}x {reward.name}"
+                f"[ {self.timestamp} ] Daily Rewards (Honkai3rd) - {reward.amount}x {reward.name}"
             )
 
             async for claimed in self.Client.claimed_rewards(game=Game.HONKAI):
@@ -83,7 +83,7 @@ class AutoCheckIn:
             async for claimed in self.Client.claimed_rewards(game=Game.HONKAI):
                 embed = DiscordEmbed(
                     title="Honkai Impact 3rd Daily Sign-in",
-                    description=f"━━━━━━━━━━━━━━━━━━━━━━━━━\nUsername: {account.info.nickname} [{account.info.server}] ({await self.Client._get_uid(game=Game.HONKAI)})\nItem Rewards: {reward.name} x{reward.amount}\nToday's Checkin Time: {claimed.time.strftime('%d %B, %Y')}\nTotal Checkin: {len(x)} Days\nStatus: OK\n━━━━━━━━━━━━━━━━━━━━━━━━━",
+                    description=f"━━━━━━━━━━━━━━━━━━━━━━━━━\nUsername: {account.info.nickname} [{account.info.server}] ({await self.Client._get_uid(game=Game.HONKAI)})\nItem Rewards: {reward.name} x{reward.amount}\nToday's Checkin Date: {claimed.time.strftime('%d %B, %Y')}\nTotal Checkin: {len(x)} Days\nStatus: OK\n━━━━━━━━━━━━━━━━━━━━━━━━━",
                     color="0038a8",
                 )
                 embed.set_timestamp()
