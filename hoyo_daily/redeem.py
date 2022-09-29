@@ -47,7 +47,7 @@ class AutoRedeem:
                         code=codes[i], uid=await self.Client._get_uid(game=Game.GENSHIN)
                     )
                     await asyncio.sleep(5)
-            except ValueError:
+            except TypeError:
                 return
 
             embed = DiscordEmbed(
