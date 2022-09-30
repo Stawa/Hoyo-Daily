@@ -1,5 +1,7 @@
 ## Locate the `auth_key` from Genshin Impact
 
+**Note: The Powershell script was from [`paimon.moe`](https://paimon.moe/) and it wasn't mine.**
+
 - PC
 
   1. Open `Wish History` in Game and Wait until it Load
@@ -17,7 +19,7 @@
 
 ## Locate the `ltoken`, `ltuid` and `cookie_token` from HoyoLab.
 
-**Note: The Cookie script was created by [TakaGG](https://www.youtube.com/c/takagg/) and is not mine.**
+**Note: The Cookie script was created by [TakaGG](https://www.youtube.com/c/takagg/) and it wasn't mine.**
 
 1. Go to Bookmarks [Chrome](chrome://bookmarks/), [Opera GX](opera://bookmarks)
 2. Create a new bookmark with Name `Cookie` and URL

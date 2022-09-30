@@ -56,5 +56,5 @@ pip3 install git+https://github.com/Stawa/Hoyo-Daily
 There are 3 requirements to use this git repository,
 
 1. [AuthKey](https://github.com/Stawa/Hoyo-Daily/blob/main/TUTORIAL.md#locate-the-auth_key-from-genshin-impact) - Genshin Impact Client (Optional)
-2. [HoyoLab Cookies](https://github.com/Stawa/Hoyo-Daily/blob/main/TUTORIAL.md#locate-the-ltoken-and-ltuid-from-hoyolab)
+2. [HoyoLab Cookies](https://github.com/Stawa/Hoyo-Daily/blob/main/TUTORIAL.md#locate-the-ltoken-ltuid-and-cookie_token-from-hoyolab)
 3. [Discord Webhook](https://github.com/Stawa/Hoyo-Daily/blob/main/TUTORIAL.md#create-a-discord-webhook-as-notification)
